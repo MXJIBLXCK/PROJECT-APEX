@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Successful | Project Apex</title>
+  <link rel="stylesheet" href="success.css">
+</head>
+<body>
+
+  <div class="success-container">
+    
+    <div class="checkmark-wrapper">
+      <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+        <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+        <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+      </svg>
+    </div>
+
+    <h1>Booking Confirmed!</h1>
+    <p>Your payment was successful. Get ready to hit the track.</p>
+    
+    <p class="redirect-msg">Redirecting to Home in <span id="countdown">5</span> seconds...</p>
+
+    <a href="home.html" class="home-btn">Return Home Now</a>
+  </div>
+
+  <script>
+    // Countdown and Redirect Logic
+    let timeLeft = 5;
+    const countdownElem = document.getElementById('countdown');
+
+    const timer = setInterval(function() {
+      timeLeft--;
+      countdownElem.textContent = timeLeft;
+
+      if (timeLeft <= 0) {
+        clearInterval(timer);
+        window.location.href = "home.html";
+      }
+    }, 1000);
+  </script>
+
+</body>
+</html>

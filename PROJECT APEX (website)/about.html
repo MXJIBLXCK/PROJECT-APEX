@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Project Apex — Sim Racing Non-Profit & Motorsport Pathways</title>
+  <meta name="description" content="Project Apex is a youth-driven non-profit creating pathways from sim racing to motorsport. Meet the team, learn our mission, and see how we empower underprivileged racers.">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+  <link rel="stylesheet" href="about.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header id="navbar">
+    <div class="logo">
+      <img src="project-apex-logo.png" alt="Project Apex Logo" />
+      <h1>PROJECT APEX</h1>
+    </div>
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html" class="active">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="getinvolved.html">Get Involved</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="about-hero reveal" data-aos="fade-up">
+    <h1>About Project Apex</h1>
+    <p>We push limits — on track, online, and in the community.</p>
+  </section>
+
+  <!-- STORY -->
+  <section class="story reveal">
+    <div class="story-content">
+      <h2>Our Story</h2>
+      <p>
+        At PROJECT APEX, we live and breathe motorsport. From professional sim training 
+        to grassroots mentorship, our mission is to create opportunities for every racer — 
+        whether on track or behind the wheel at home.
+      </p>
+      <br>
+      <p>
+        We are a youth-driven non-profit organization dedicated to bridging the gap 
+        between sim racing and real-world motorsport, empowering underprivileged 
+        and aspiring racers with the tools they need to shine.
+      </p>
+      <br>
+      <p>
+        Founded by a passionate sim racer, PROJECT APEX exists because talent 
+        shouldn’t be held back by financial barriers. If you dream about racing, 
+        we’re here to help you get into that driver seat.
+      </p>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="team reveal">
+    <h2>Meet the Team</h2>
+
+    <div class="team-grid">
+
+      <div class="team-card flip">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="aboutcard-one.webp" alt="Driver Coach">
+            <h3>Driver Coach</h3>
+          </div>
+          <div class="card-back">
+            <p>Specialist in racecraft, pace building, and driver development.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="team-card flip">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="aboutcard-two.webp" alt="Sim Engineer">
+            <h3>Sim Engineer</h3>
+          </div>
+          <div class="card-back">
+            <p>Expert in rig setup, telemetry, analysis, and performance optimization.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="team-card flip">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="aboutcard-three.webp" alt="Community Manager">
+            <h3>Community Manager</h3>
+          </div>
+          <div class="card-back">
+            <p>Building culture, managing events, and driving partnerships.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta reveal">
+    <h2>Join the Apex Journey</h2>
+    <a href="contact.html" class="cta-btn">Contact Us</a>
+  </section>
+
+  <!-- PARTNERS -->
+  <section class="partners reveal">
+    <h2>OUR PARTNERS</h2>
+    <div class="partner-logos">
+      <img src="redbull.png" alt="partner1" loading="lazy">
+      <img src="pirelli.jpg" alt="partner2" loading="lazy">
+      <img src="moza.png" alt="partner3" loading="lazy">
+      <img src="iRacing.png" alt="partner4" loading="lazy">
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 PROJECT APEX | All rights reserved.</p>
+    <div class="social-links">
+  <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+  <a href="https://discord.gg" target="_blank"><i class="fab fa-discord"></i></a>
+  <a href="https://x.com" target="_blank"><i class="fab fa-x-twitter"></i></a>
+  </div>
+  </footer>
+
+  <script src="about.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    easing: 'ease-out',
+    once: true
+  });
+</script>
+<script>
+  const currentPage = window.location.pathname.split("/").pop();
+  const navLinks = document.querySelectorAll("nav ul li a");
+
+  navLinks.forEach(link => {
+    const linkPage = link.getAttribute("href");
+
+    if (linkPage === currentPage) {
+      link.classList.add("active");
+    }
+  });
+</script>
+
+</body>
+</html>

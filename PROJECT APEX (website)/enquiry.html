@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enquiry | Project Apex</title>
+  <link rel="stylesheet" href="forms.css">
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+      <img src="project-apex-logo.png" alt="Project Apex Logo">
+      <h1>PROJECT APEX</h1>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="getinvolved.html">Get Involved</a></li>
+        <li><a href="enquiry.html" class="active">Enquiry</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="form-container">
+
+      <h2 class="form-title">Send Us an Enquiry</h2>
+
+      <form id="enquiryForm">
+
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" required>
+
+        <label for="service">Select Service:</label>
+        <select id="service" required>
+          <option value="">-- Choose a service --</option>
+          <option value="Coaching Sessions">Coaching Sessions</option>
+          <option value="Track Day Experience">Track Day Experience</option>
+          <option value="Sim Training">Sim Training</option>
+          <option value="Sponsorship Enquiry">Sponsorship Enquiry</option>
+        </select>
+
+        <label for="details">Additional Details:</label>
+        <textarea id="details" rows="5" required></textarea>
+
+        <button type="submit">Submit Enquiry</button>
+      </form>
+
+      <p id="responseMsg" class="hidden"></p>
+
+    </div>
+  </main>
+
+  <script src="forms.js"></script>
+</body>
+</html>
+

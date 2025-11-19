@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services | Project Apex — Sim Training, Mentorship & Competitions</title>
+  <meta name="description" content="Explore Project Apex services: pro-grade sim training, mentorship from racers, competitive leagues and pathways to real-world track opportunities. Apply to join.">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+  <link rel="stylesheet" href="services.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="project-apex-logo.png" alt="Project Apex Logo" />
+      <h1>PROJECT APEX</h1>
+    </div>
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="getinvolved.html">Get Involved</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="services-hero reveal" data-aos="fade-up">
+    <h1>Our Services</h1>
+    <p>Pushing sim racing forward with training, mentorship, and competitive opportunities.</p>
+  </section>
+
+  <!-- Services -->
+  <section class="services reveal">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+
+      <div class="service-card" data-aos="zoom-in">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="servicescard-one.webp" alt="Sim Training" />
+            <h3>Sim Training</h3>
+          </div>
+          <div class="card-back">
+            <p>Sharpen your racing skills with professional-grade simulators and expert coaching that helps you improve lap by lap.</p>
+            <a href="#" class="service-btn">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="service-card" data-aos="zoom-in">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="servicescard-two.webp" alt="Mentorship" />
+            <h3>Mentorship</h3>
+          </div>
+          <div class="card-back">
+            <p>Get one-on-one mentorship from seasoned racers, learning strategies, setups, and mindset for consistent results.</p>
+            <a href="#" class="service-btn">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="service-card" data-aos="zoom-in">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="servicescard-three.webp" alt="Competitions" />
+            <h3>Competitions</h3>
+          </div>
+          <div class="card-back">
+            <p>Join our exclusive sim racing tournaments to showcase your talent, climb the ranks, and win amazing prizes.</p>
+            <a href="#" class="service-btn">Join Now</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta reveal">
+    <h2>Ready to join the race?</h2>
+    <a href="contact.html" class="cta-btn">Get Started</a>
+  </section>
+
+  <!-- Partners -->
+  <section class="partners reveal">
+    <h2>OUR PARTNERS</h2>
+    <div class="partner-logos">
+      <img src="redbull.png" alt="Redbull" loading="lazy"/>
+      <img src="pirelli.jpg" alt="Pirelli" loading="lazy"/>
+      <img src="moza.png" alt="Moza" loading="lazy"/>
+      <img src="iRacing.png" alt="iRacing" loading="lazy"/>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy;2025 PROJECT APEX | All rights reserved.</p>
+    <div class="social-links">
+  <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+  <a href="https://discord.gg" target="_blank"><i class="fab fa-discord"></i></a>
+  <a href="https://x.com" target="_blank"><i class="fab fa-x-twitter"></i></a>
+  </div>
+  </footer>
+
+  <script src="services.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    easing: 'ease-out',
+    once: true
+  });
+</script>
+<script>
+  const currentPage = window.location.pathname.split("/").pop();
+  const navLinks = document.querySelectorAll("nav ul li a");
+
+  navLinks.forEach(link => {
+    const linkPage = link.getAttribute("href");
+
+    if (linkPage === currentPage) {
+      link.classList.add("active");
+    }
+  });
+</script>
+
+</body>
+</html>

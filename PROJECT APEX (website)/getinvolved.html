@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get Involved | Project Apex — Volunteer, Sponsor & Compete</title>
+  <meta name="description" content="Want to help Project Apex? Volunteer, sponsor, compete or partner with us. Find opportunities to grow grassroots sim racing and create real-world pathways.">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+  <link rel="stylesheet" href="getinvolved.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="project-apex-logo.png" alt="Project Apex Logo" />
+      <h1>PROJECT APEX</h1>
+    </div>
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="getinvolved.html" class="active">Get Involved</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero get-involved-hero" data-aos="fade-up">
+    <div class="hero-content">
+      <h1>Get Involved with Project Apex</h1>
+      <p>Join our journey. Be part of the future of racing, mentorship, and innovation.</p>
+      <a href="#opportunities" class="btn">See Opportunities</a>
+    </div>
+  </section>
+
+  <!-- Opportunities Section -->
+  <section id="opportunities" class="opportunities">
+    <h2>Ways You Can Get Involved</h2>
+    <div class="opportunities-grid">
+      <div class="card">
+        <h3>Volunteer</h3>
+        <p>Help us run events, manage sim training, or mentor newcomers in racing.</p>
+      </div>
+      <div class="card">
+        <h3>Partner With Us</h3>
+        <p>Work with Project Apex to bring your brand into the future of motorsport.</p>
+      </div>
+      <div class="card">
+        <h3>Compete</h3>
+        <p>Join our competitions and show your skills on the track.</p>
+      </div>
+      <div class="card">
+        <h3>Sponsor</h3>
+        <p>Support our mission and help us expand opportunities in sim racing.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta">
+    <h2>Ready to Join Us?</h2>
+    <p>Contact us today and let’s build something great together.</p>
+    <a href="contact.html" class="btn">Contact Us</a>
+  </section>
+
+  <!--Partners Section-->
+    <section class="partners">
+        <h2>OUR PARTNERS</h2>
+        <div class="partner-logos">
+            <img src="redbull.png" alt="partner1" loading="lazy">
+            <img src="pirelli.jpg" alt="partner2" loading="lazy">
+            <img src="moza.png" alt="partner3" loading="lazy">
+            <img src="iRacing.png" alt="partner4" loading="lazy">
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer>
+        <p>&copy;2025 PROJECT APEX | All rights reserverd.</p>
+        <div class="social-links">
+  <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+  <a href="https://discord.gg" target="_blank"><i class="fab fa-discord"></i></a>
+  <a href="https://x.com" target="_blank"><i class="fab fa-x-twitter"></i></a>
+  </div>
+    </footer>
+
+      <script src="getinvolved.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init({
+          duration: 800,
+          easing: 'ease-out',
+          once: true
+        });
+      </script>
+      <script>
+  const currentPage = window.location.pathname.split("/").pop();
+  const navLinks = document.querySelectorAll("nav ul li a");
+
+  navLinks.forEach(link => {
+    const linkPage = link.getAttribute("href");
+
+    if (linkPage === currentPage) {
+      link.classList.add("active");
+    }
+  });
+</script>
+
+</body>
+</html>

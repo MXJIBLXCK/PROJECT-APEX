@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Project Apex — Get In Touch</title>
+  <meta name="description" content="Questions about Project Apex? Contact us for sim training, mentorship, sponsorships and events. Email, phone and location info for Johannesburg-based operations.">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<header id="navbar">
+  <div class="logo">
+    <img src="project-apex-logo.png" alt="Project Apex Logo">
+    <h1>PROJECT APEX</h1>
+  </div>
+
+  <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html" class="active">Contact Us</a></li>
+      <li><a href="getinvolved.html">Get Involved</a></li>
+      <li><a href="enquiry.html">Enquiry</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<!-- HERO SECTION -->
+<section class="contact-hero fade-in" data-aos="fade-up">
+  <h1>Contact Us</h1>
+  <p>Reach out to the Apex team — we’d love to connect with you.</p>
+</section>
+
+
+<!-- CONTACT CONTENT -->
+<section class="contact-content section">
+  <div class="contact-wrapper">
+
+    <!-- REPLACED FORM WITH BUTTON -->
+    <div class="contact-box slide-left">
+      <h2>Get in Touch</h2>
+      <p class="contact-sub">Have a question or want to get involved? Hit the button below to send an enquiry.</p>
+
+      <button id="goToEnquiry" class="enquiry-btn">
+        Make an Enquiry
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<!-- INFO -->
+<section class="contact-info reveal">
+  <h2>Contact Information</h2>
+  <p class="contact-sub">We’re here to connect — reach out anytime.</p>
+
+  <div class="contact-cards">
+    <div class="contact-card">
+      <div class="icon">📞</div>
+      <h3>Phone</h3>
+      <p>+27 62 025 1061</p>
+    </div>
+
+    <div class="contact-card">
+      <div class="icon">✉️</div>
+      <h3>Email</h3>
+      <p>info@projectapex.co.za</p>
+    </div>
+  </div>
+</section>
+
+</section>
+
+<section class="map-section fade-in">
+  <h2 class="section-title">Find Us</h2>
+  
+  <div class="map-container" data-aos="zoom-in">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3586.050924771371!2d28.066314974682115!3d-25.99914915565287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9571a233f8fb5d%3A0xb5d88a84968bc933!2sKyalami%20Grand%20Prix%20Circuit!5e0!3m2!1sen!2sza!4v1763293063192!5m2!1sen!2sza" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+
+      </iframe>
+  </div>
+</section>
+
+
+
+<!-- PARTNERS -->
+<section class="partners fade-in">
+  <h2>OUR PARTNERS</h2>
+  <div class="partner-logos" loading="lazy">
+    <img src="redbull.png" loading="lazy">
+    <img src="pirelli.jpg" loading="lazy">
+    <img src="moza.png" loading="lazy">
+    <img src="iRacing.png" loading="lazy">
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+  <p>&copy; 2025 PROJECT APEX | All rights reserved.</p>
+  <div class="social-links">
+  <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+  <a href="https://discord.gg" target="_blank"><i class="fab fa-discord"></i></a>
+  <a href="https://x.com" target="_blank"><i class="fab fa-x-twitter"></i></a>
+  </div>
+</footer>
+
+<!-- GLOBAL JS -->
+<script src="contact.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    easing: 'ease-out',
+    once: true
+  });
+</script>
+<script>
+  const currentPage = window.location.pathname.split("/").pop();
+  const navLinks = document.querySelectorAll("nav ul li a");
+
+  navLinks.forEach(link => {
+    const linkPage = link.getAttribute("href");
+
+    if (linkPage === currentPage) {
+      link.classList.add("active");
+    }
+  });
+
+  document.getElementById("goToEnquiry").addEventListener("click", () => {
+  window.location.href = "enquiry.html";
+});
+
+</script>
+
+</body>
+</html>

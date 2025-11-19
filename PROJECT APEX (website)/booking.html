@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Session | Project Apex</title>
+  <link rel="stylesheet" href="booking.css">
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="logo">
+    <img src="project-apex-logo.png" alt="Project Apex Logo">
+    <h1>PROJECT APEX</h1>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="booking.html" class="active">Booking</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="booking-hero">
+  <h2>Book a Session</h2>
+  <p>Choose your experience and take the next step toward the circuit.</p>
+</section>
+
+<section class="session-cards">
+
+  <div class="session-card slide-up card-1">
+    <h3>Track Day Experience</h3>
+    <p class="price">R899</p>
+    <p>Book a real track day and push real limits.</p>
+    <button onclick="goToPayment('Track Day','899')">Book Now</button>
+  </div>
+
+  <div class="session-card slide-up card-2">
+    <h3>Coaching Session</h3>
+    <p class="price">R499</p>
+    <p>1-on-1 training to level up your racing skills.</p>
+    <button onclick="goToPayment('Coaching Session','499')">Book Now</button>
+  </div>
+
+  <div class="session-card slide-up card-3">
+    <h3>Sim Training</h3>
+    <p class="price">R299</p>
+    <p>Perfect your racecraft with professional sim coaching.</p>
+    <button onclick="goToPayment('Sim Training','299')">Book Now</button>
+  </div>
+
+</section>
+
+<script>
+  function goToPayment(session, price) {
+    // Ensure payment.html exists in your folder
+    window.location.href = `payment.html?session=${encodeURIComponent(session)}&price=${price}`;
+  }
+</script>
+
+</body>
+</html>

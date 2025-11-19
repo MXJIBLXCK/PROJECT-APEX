@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Apex — From Sim to Circuit | Sim Racing Training & Mentorship</title>
+  <meta name="description" content="Project Apex helps aspiring racers transition from sim racing to real-world motorsport. Free/subsidised sim rigs, coaching, competitions and mentorship across South Africa.">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="home.css">
+  <link rel="preload" href="home.css" as="style">
+<link rel="preload" href="script.js" as="script">
+<link rel="preload" href="homebg.webp" as="image">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+  <!-- Navigation -->
+  <header id="navbar">
+    <div class="logo">
+      <img src="project-apex-logo.png" alt="Project Apex Logo" />
+      <h1>PROJECT APEX</h1>
+    </div>
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="home.html" class="active">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="getinvolved.html">Get Involved</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero parallax" id="home" data-aos="fade-up">
+    <div class="hero-content fade-in">
+      <h2>WELCOME TO PROJECT APEX</h2>
+      <p>From Sim to Circuit</p>
+      <p>Your Drive Starts Here</p>
+      <a href="booking.html" class="btn pulse">Book a session</a>
+    </div>
+  </section>
+
+  <!-- Mission Section -->
+  <section class="intro parallax" id="mission">
+    <div class="intro-overlay reveal">
+      <div class="intro-content">
+        <h2>OUR MISSION</h2>
+        <p>
+          To empower the next generation of professional drivers by providing access to tools, training, and opportunities — starting with sim racing and ending at the apex of real motorsport.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Operating Hours -->
+  <section class="hours reveal" id="hours">
+    <h2>Operating Hours</h2>
+    <p>We’re here to support your racing journey throughout the week.</p>
+    <div class="hours-grid">
+      <div class="hour-box"><span>Monday – Friday:</span> 09:00 – 18:00</div>
+      <div class="hour-box"><span>Saturday:</span> 10:00 – 16:00</div>
+      <div class="hour-box"><span>Sunday:</span> Closed</div>
+      <div class="hour-box"><span>Public Holidays:</span> 09:00 – 17:00</div>
+    </div>
+  </section>
+
+  <!-- Partners -->
+  <section class="partners parallax" id="partners">
+    <h2>OUR PARTNERS</h2>
+    <div class="partner-logos">
+      <img src="redbull.png" alt="Red Bull" class="reveal" loading="lazy">
+      <img src="pirelli.jpg" alt="Pirelli" class="reveal" loading="lazy">
+      <img src="moza.png" alt="Moza" class="reveal" loading="lazy">
+      <img src="iRacing.png" alt="iRacing" class="reveal" loading="lazy">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy;2025 PROJECT APEX | All rights reserved.</p>
+    <div class="social-links">
+  <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+  <a href="https://discord.gg" target="_blank"><i class="fab fa-discord"></i></a>
+  <a href="https://x.com" target="_blank"><i class="fab fa-x-twitter"></i></a>
+  </div>
+
+  </footer>
+
+  <script src="home.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    easing: 'ease-out',
+    once: true
+  });
+</script>
+
+<script>
+  const currentPage = window.location.pathname.split("/").pop();
+  const navLinks = document.querySelectorAll("nav ul li a");
+
+  navLinks.forEach(link => {
+    const linkPage = link.getAttribute("href");
+
+    if (linkPage === currentPage) {
+      link.classList.add("active");
+    }
+  });
+</script>
+
+</body>
+</html>
